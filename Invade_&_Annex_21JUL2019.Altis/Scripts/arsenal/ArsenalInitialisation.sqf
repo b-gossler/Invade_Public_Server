@@ -28,11 +28,12 @@ if ((roleDescription player find "Squad Leader" > -1) || (roleDescription player
 //Medics
 if (roleDescription player find "Medic" > -1) then {
 	_allowedItemsArray = _allowedItemsArray + ["U_C_Paramedic_01_F", "V_Plain_crystal_F"];
+	_allowedWeaponsArray = _allowedWeaponsArray +  restrictedLAT;
 };
 
 //Autoriflemen
 if (roleDescription player find "Autorifleman" > -1) then {
-	_allowedWeaponsArray = generalPistols + restrictedMGs + underWaterGun;
+	_allowedWeaponsArray = generalPistols + restrictedMGs + underWaterGun + restrictedLAT;
 };
 
 if (roleDescription player find "LAT" > -1) then {
@@ -41,13 +42,13 @@ if (roleDescription player find "LAT" > -1) then {
 
 //Grenadiers
 if (roleDescription player find "Grenadier" > -1) then {
-	_allowedWeaponsArray = generalPistols + restrictedAssaultRiflesUGL + underWaterGun;
+	_allowedWeaponsArray = generalPistols + restrictedAssaultRiflesUGL + underWaterGun +  restrictedLAT;
 };
 
 //Marksmen
 if (roleDescription player find "Marksman" > -1) then {
 	_allowedItemsArray = _allowedItemsArray + restrictedOpticsMarksman + restrictedUniformsMarksman;
-	_allowedWeaponsArray = generalPistols + restrictedDMRs + underWaterGun;
+	_allowedWeaponsArray = generalPistols + restrictedDMRs + underWaterGun +  restrictedLAT;
 };
 
 //AT Infantry
