@@ -1,0 +1,37 @@
+*************************Edits to map**************************
+
+
+08JUL2019-Josh
+added teleporter for playerPilots to TP to carrier back from carrier
+added teleporter map for HALO jump
+Added secret teleporter to anywhere on map{ROBS USE ONLY}
+
+09JUL2019-Rob
+Added RRR area for fixed wing @ main base
+Edited loadout of helo and fixed wing assets
+
+10JUL2019-Foche
+Edited functions/vehicle/fn_vsetup to allow custom loadout
+
+11JUL2019-Rob
+Added Wipeout to main base
+Added FOB initialization to serverinit file for testing FOBs
+
+11JUL2019-Foche
+Edited functions/vehicle/fn_vsetup to allow custom loadouts on FA181 and Wipeout
+
+21JUL2019-Gossler 
+Edited /MGI_HALO.sqm - Added the playerDamageDisabledCount = 0; variable to be triggered each time the player uses the HALO jump. Alleviates the kick for using HALO >4 times. 
+Disabled spawning of billboard in main base advertising I&A4
+Added AT launcher access to classes
+
+21JUL2019-Joshmagosh
+Edited MGI_HALO.sqm to fit in the Main Base amd function
+Edited tje fn_vsetup on the "ATTACKHELO" at main base to remove AASR and add more ATGM's
+Added Map of ALTIS to use for scroll option for HALO.JUMP
+Added Spec Ops member by the map
+Added fn_setup on UAV on Main Base to have more ATGM's (1 GBU UAV, 1 ATGM UAV)
+Added empty marker for CAS (WIPEOUT) to be spawned on FOB*
+Added VON to have enabled on side channel as a test
+
+*waiting for a fix from ahoy world
